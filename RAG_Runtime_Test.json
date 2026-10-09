@@ -1,0 +1,55 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "source": "ModelScope",
+  "weight_sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+  "device": "CPU",
+  "model_inference_run": true,
+  "completed_at_utc": "2026-10-09T08:20:00.200494+00:00",
+  "tests": [
+    {
+      "question": "What exact phone number should I call for the University IT Service Desk?",
+      "result": {
+        "answer": "I don't know the University IT Service Desk phone number because it is not specified in the provided policies.",
+        "sources": []
+      },
+      "evidence": [],
+      "raw_model_output": "{\"evidence_ids\": []}"
+    },
+    {
+      "question": "Which wireless network should guests use?",
+      "result": {
+        "answer": "Guests should use Campus-Guest rather than Campus-Secure.",
+        "sources": [
+          "doc-0008"
+        ]
+      },
+      "evidence": [
+        {
+          "text": "Guests should use Campus-Guest rather than Campus-Secure.",
+          "policy_id": "doc-0008",
+          "id": "E1",
+          "score": 0.36846823136537543
+        },
+        {
+          "text": "Campus-Secure is the primary wireless network for students and staff.",
+          "policy_id": "doc-0015",
+          "id": "E2",
+          "score": 0.353126979109358
+        },
+        {
+          "text": "If Campus-Secure authentication fails, forget the network, restart Wi-Fi, and reconnect.",
+          "policy_id": "doc-0008",
+          "id": "E3",
+          "score": 0.08468229621653628
+        },
+        {
+          "text": "Large research datasets should use approved research storage rather than personal cloud folders.",
+          "policy_id": "doc-0002",
+          "id": "E4",
+          "score": 0.07634203474239054
+        }
+      ],
+      "raw_model_output": "{\"evidence_ids\": [\"E1\"]}"
+    }
+  ]
+}

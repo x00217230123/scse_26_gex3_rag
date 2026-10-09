@@ -32,5 +32,9 @@ The target phone question must return only:
 
 > I don't know the University IT Service Desk phone number because it is not specified in the provided policies.
 
-Tests inject model outputs to check retrieval and validation. They do not constitute
-an actual Qwen inference run. A real run requires downloaded model weights and dependencies.
+Unit tests inject model outputs to check retrieval and validation. Separately,
+`RAG_Runtime_Test.json` records actual CPU inference with the ModelScope
+Qwen3-0.6B weights: the missing phone number is refused and the guest Wi-Fi
+answer is grounded in policy doc-0008. It includes raw model selections,
+retrieved evidence and the verified weight checksum. These checks cover two
+questions, not every possible question.
