@@ -1,0 +1,6 @@
+langchain-core
+scikit-learn
+torch
+transformers>=4.51.0,<5
+accelerate
+modelscope
